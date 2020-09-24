@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    user-select: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.pontuacao {
+    border: 2px solid #777777;
+    width: 250px;
+    height: 150px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.vtsua,
+.vtad {
+    background: #ff2525;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.vtsua {
+    left: -50px;
+}
+
+.vtad {
+    right: -50px;
+}
+
+.resultado {
+    width: 100%;
+    height: 100%;
+}
+
+.resultado p {
+    font-size: 45pt;
+    text-align: center;
+    line-height: 150px;
+}
+
+.jogadas {
+    width: 300px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.voce,
+.adversario {
+    display: inline-block;
+    margin-right: -4px;
+    width: calc(100% / 2);
+}
+
+.voce img,
+.adversario img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 110px;
+    text-align: center;
+}
+
+.voce p,
+.adversario p {
+    text-align: center;
+}
+
+.pont p {
+    text-align: center;
+    font-size: 15pt;
+}
+
+.opcoes {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.pedra,
+.tesoura,
+.papel {
+    width: calc(100% / 3);
+    height: 100%;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+.pedra img,
+.tesoura img,
+.papel img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.pedra img:hover,
+.tesoura img:hover,
+.papel img:hover {
+    transition: .8s;
+    transform: scale(1.2,1.2);
+}
+
+.final {
+    position: fixed;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #bc77fc;
+}
+
+.final h1 {
+    text-align: center;
+    line-height: 100vh;
+    color: #ffffff;
+}
+
+.block {
+    display: block;
+}
+
+.final a button {
+    position: absolute;
+    z-index: 100;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 11.5px 25px;
+    font-size: 25pt;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: coral;
+    border: 0;
+    cursor: pointer;
+}
+
+.none {
+    display: none !important;
+}
